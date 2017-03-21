@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Electron Example</title>
+    <!-- Stylesheets -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="node_modules/p-loading/dist/css/p-loading.min.css">
+</head>
+
+<body>
+    <div class="window">
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane pane-sm sidebar">
+                    <nav class="nav-group">
+                        <h5 class="nav-group-title">Menu</h5>
+                        <span class="nav-group-item active" id="dashboard">
+                            <span class="icon icon-chart-line"></span> Menu1
+                        </span>
+                        <span class="nav-group-item" id="connection">
+                            <span class="icon icon-database"></span> Menu2
+                        </span>
+                        <span class="nav-group-item" id="healthCheck">
+                            <span class="icon icon-gauge"></span> Menu3
+                        </span>
+                    </nav>
+                </div>
+                <div class="pane" id="pane"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+
+</html>

@@ -1,0 +1,26 @@
+{
+	"name": "electronExample",
+	"version": "1.0.0",
+	"description": "A minimal Electron application",
+	"keywords": [
+		"Electron",
+		"quick",
+		"start",
+		"tutorial",
+		"demo"
+	],
+	"license": "CC0-1.0",
+	"main": "main.js",
+	"repository": {},
+	"scripts": {
+		"start": "electron ."
+	},
+	"dependencies": {
+		"bootstrap": "^3.3.7",
+		"jQuery": "^1.7.4",
+		"p-loading": "^1.2.0"
+	},
+	"devDependencies": {
+		"electron": "^1.4.1"
+	}
+}
